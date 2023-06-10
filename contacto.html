@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>contacto</title>
+</head>
+<body>
+          <div id="container">
+                    <div id="flex">
+                              <main>
+                                        <h1>Contacto</h1>
+                                       <p>Esta pagina fue creada por Cantú Carrillo Danna Paola y Erunes Fuentes Angel Fernando. <br> si desea contactarnos lo puede hacer mediante alguno de los siguientes medios:</p>
+                                       <svg width="100" height="100">
+                                        <mask id="svgmask1">
+                                          <circle fill="#ffffff" cx="50" cy="50" r="50"></circle>
+                                        </mask>
+                                        <a href="https://mail.google.com/mail/u/0/#inbox" onclick="audio.play()"><image href="gmail.png" mask="url(#svgmask1)" width="100" height="100"></image></a>
+                                      </svg>
+                                      <svg width="100" height="100">
+                                        <mask id="svgmask1">
+                                          <circle fill="#ffffff" cx="50" cy="50" r="50"></circle>
+                                        </mask>
+                                        <a href="https://es-la.facebook.com/" onclick="audio.play()"><image href="facebook.png" mask="url(#svgmask1)" width="100" height="100"></image></a>
+                                      </svg>
+                                      <svg width="100" height="100">
+                                        <mask id="svgmask1">
+                                          <circle fill="#ffffff" cx="50" cy="50" r="50"></circle>
+                                        </mask>
+                                        <a href="https://www.instagram.com/" onclick="audio.play()"><image href="insta.jpg" mask="url(#svgmask1)" width="100" height="100"></image></a>
+                                      </svg>
+                                      <h4>Puede que se deniegue la conexion porque la pagina a la que se vinculo no detecta bien quien quiere entrar, se soluciona facilmente con un click derecho y abriendola en otra pestaña!!</h4>
+                                    </div>
+                   </div>
+                   <style>
+                             *{box-sizing: border-box;}
+                             #container{
+                                       max-width: 900px;
+                                       margin: 0 auto;
+                             }
+                             #container a{
+                                       color: cadetblue;
+                                       font-weight: bold;
+                                       text-decoration: none;
+                             }
+                             #flex{display: flex;}
+                              main{
+                                        background-color:  #fff2fa;
+                                        flex: 1;
+                                        padding: 20px;
+                                        order: 2;
+                              }
+                              body{
+                                        background-image: url(fondogif.gif);
+                                        background-color: #cccccc;
+            animation: fadeInAnimation ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+                   </style>
+                   <script>
+                    const audio=new Audio;
+                    audio.src="videoplayback (1).m4a";
+                </script>
+</body>
+</html>

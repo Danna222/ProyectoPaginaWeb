@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>inicio</title>
+</head>
+<body>
+         <div id="container">
+          <div id="flex">
+                    <aside id="left">
+                              <h3>Actualizaciones</h3>
+                              <div class="box">
+                                        <h5 style="color: white;">02/06/2023</h5>
+                                        <ul style="padding-left:10px;">
+                                        <li style="color: white;">investigación.</li>
+                                        <li style="color: white;">Realización de la pagina info.</li>
+                                        <li style="color: white;">Implementación de anclas.</li>
+                                        <li style="color: white;">Implementación de la lista de menu.</li>
+                                        </ul>
+                              </div>
+                              <div class="box">
+                                <h5 style="color: white;">05/06/2023</h5>
+                                <ul style="padding-left:10px;">
+                                <li style="color: white;">Realización de la Galería.</li>
+                                <li style="color: white;">Realización de la barra de navegación.</li>
+                                <li style="color: white;">Implementación de tooltips.</li>
+                                <li style="color: white;">Implementación del boton.</li>
+                                </ul>
+                      </div>
+                      <div class="box">
+                        <h5 style="color: white;">08/06/2023</h5>
+                        <ul style="padding-left:10px;">
+                        <li style="color: white;">Se implemento la base del Layout y el frame.</li>
+                        </ul>
+              </div>
+                              <div class="box">
+                                <h5 style="color: white;">09/06/2023</h5>
+                                <ul style="padding-left:10px;">
+                                <li style="color: white;">Actualizacion del Layout.</li>
+                                <li style="color: white;">Implementación de las transiciones.</li>
+                                <li style="color: white;">Se implemento la pagina Contacto.</li>
+                                <li style="color: white;">Se implemento la pagina Video.</li>
+                                <li style="color: white;">Algunas interacciones hacen un sonido de click.</li>
+                                </ul>
+                      </div>
+                    </aside>
+                    <main>
+                              <h1>Bienvenido!</h1>
+                              <h2>Proyecto de Pagina Web</h2>
+                              <h3>Escuela Preparatoria CETis 128</h3>
+                              <p>Realizado por: <br> Cantú Carrillo Danna Paola <br> Erunes Fuentes Angel Fernando <br> 4B Programación Matutino.</p>
+
+                              <h1>¿De qué trata la página?</h1>
+                              <p>Sobre los avances de la tecnología, más específicamente la Optogenética. <br> Para conocer más sobre el tema de la optogenética le invito a tocar donde dice "Info" o "Video" en la barra de navegación.</p>
+
+                              <h1>¿Con qué cuenta la página?</h1>
+                              <p>Para que se reconozca de manera más sencilla cada elemento de la pagina, aquí esta la lista de requisitos del proyecto y donde fueron utilizados cada uno:</p>
+                              <ol type="1">
+                                <li>Menú o barra de navegación: Tabla de navegación ubicada en la parte superior de la página.</li>
+                                <li>Tabla: En información/info hay una tabla de contenidos.</li>
+                                <li>Galería de imagenes: En galeria hay una galería de imagenes interactiva que compila las imagenes utilizadas en información.</li>
+                                <li>Fondo de Color: Todas las secciones tienen un fondo de color (bonus: la página tiene un fondo animado en general).</li>
+                                <li>Vínculos (texto, imagen, GIF): Vinculos de texto en información, un gif con un vinculo a youtube en video e imagenes con vinculos a las paginas principales de gmail, facebook e instagram en contacto.</li>
+                                <li>Uso de botones: Un boton para regresar al inicio al final de información.</li>
+                                <li>Transiciones:Cada que se cambia de pagina sucede una transicion.</li>
+                                <li>tooltips: Usado para poner algunas fuentes en información.</li>
+                                <li>CSS animation: Usado en las transiciones.</li>
+                                <li>Transparencia y Opacidad: Usado en las transiciones y tooltips.</li>
+                                <li>Mascara en imagenes: Utilizado en las imagenes de Contacto.</li>
+                                <li>Frames: Usado para separar la barra de navegación y las paginas que cambiarían.</li>
+                                <li>Video: La seccion de video tiene 2 videos sobre la optogenética.</li>
+                                <li>Video: Multiples interacciones hacen un sonido de click.</li>
+                                <li>Listas: Las Actualizaciones, esto y algunas partes de información son listas.</li>
+                                <li>Anclas: La tabla de contenidos de información lleva a la parte que dice cuando se cliquea.</li>
+                                <li>Pagina Responsiva: Se puede interactuar con la página.</li>
+                                <li>Creditos y Fecha de Actualizaciones, hipervinculos a sus correos, facebook e instagram: Todo disponible en la seccion de contacto</li>
+                                <li>Pagina en un servidor gratuito: Esta página fue subida a Github.</li>
+                              </ol>
+                    </main>
+          </div>
+         </div>
+         <style>
+                   *{box-sizing: border-box;}
+                   #container{
+                             max-width: 900px;
+                             margin: 0 auto;
+                   }
+                   #container a{
+                             color: cadetblue;
+                             font-weight: bold;
+                             text-decoration: none;
+                   }
+                   #flex{display: flex;}
+                   aside{
+                             background-color: #917FB3;
+                             width: 200px;
+                             padding: 10px;
+                             font-size: smaller;
+                             order: 1;
+                    }
+                    main{
+                              background-color:#f6e5ff;
+                              flex: 1;
+                              padding: 20px;
+                              order: 2;
+                    }
+                    .box{
+                        font-weight: lighter;
+                              background-color: #393053;
+                              border: 1px solid #18122B;
+                              padding: 10px;
+                    }
+                    body{
+                              background-image: url(fondogif.gif);
+                              background-color: #cccccc;
+            animation: fadeInAnimation ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+         </style>
+</body>
+</html>

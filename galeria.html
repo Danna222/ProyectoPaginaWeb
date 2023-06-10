@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>galeria</title>
+ 
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    
+</head>
+<body>
+          <div id="container">
+                    <div id="flex">
+                              <main>
+                                                          
+<div class="container gallery-container">
+
+          <h1>Galeria de imagenes</h1>
+          <p>Recopilación de las imagenes utilizadas</p>
+          <center>
+          <div class="tz-gallery">
+              <div class="row">
+                  <div class="col-sm-6 col-md-4">
+                      <a class="lightbox" href="ratita.jpeg">
+                          <img src="ratita.jpeg" alt="ratita" width="700" height="300">
+                      </a>
+                  </div>
+                  <div class="col-sm-6 col-md-4">
+                      <a class="lightbox" href="cosa.jpg">
+                          <img src="cosa.jpg" alt="cosa"width="700" height="300">
+                      </a>
+                  </div>
+                  <div class="col-sm-6 col-md-4">
+                      <a class="lightbox" href="step2.png">
+                         <img src="step2.png" alt="step2" width="900" height="200"></a>
+                      </a>
+                  </div>
+                  <div class="col-sm-6 col-md-4">
+                      <a class="lightbox" href="Opto2.jpg">
+                          <img src="Opto2.jpg" alt="Costa"  width="500" height="300"></a>
+                      </a>
+                  </div>
+                  <div class="col-sm-6 col-md-4">
+                      <a class="lightbox" href="ratita3.jpg">
+                         <img src="ratita3.jpg" alt="vias" width="500" height="300"></a>
+                      </a>
+                  </div>
+          </center>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+      <script>
+          baguetteBox.run('.tz-gallery');
+      </script>
+                              </main>
+                    </div>
+                   </div>
+                   <style>
+                             *{box-sizing: border-box;}
+                             #container{
+                                       max-width: 900px;
+                                       margin: 0 auto;
+                             }
+                             #container a{
+                                       color: cadetblue;
+                                       font-weight: bold;
+                                       text-decoration: none;
+                             }
+                             #flex{display: flex;}
+                              main{
+                                        background-color:  #f6e5ff;
+                                        flex: 1;
+                                        padding: 20px;
+                                        order: 2;
+                              }
+                              body{
+                                        background-image: url(fondogif.gif);
+                                        background-color: #cccccc;
+                                    
+            animation: fadeInAnimation ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+                   </style>
+</body>
+</html>
